@@ -42,14 +42,6 @@ def send_welcome(message):
     bot.reply_to(message, "AgentDucky In")
 
 
-# Define a custom message handler
-@bot.message_handler(func=lambda message: True)
-def handle_custom_message(message):
-    # Process the incoming message and generate a response
-    received_text = message.text
-    response_text = "User typed: " + received_text
-    bot.send_message(message.chaot.id, response_text)
-
 
 # Start the Flask app
 if __name__ == "__main__":
